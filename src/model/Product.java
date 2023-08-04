@@ -17,11 +17,11 @@ public class Product {
         this.typeProduct = typeProduct;
     }
 
-    private void setName(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    private void setValue(double value) {
+    public void setValue(double value) {
         this.value = value;
     }
 
