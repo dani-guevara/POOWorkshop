@@ -17,7 +17,7 @@ public class Sale {
         this.product = product;
     }
 
-    public int getCant() {
+    public double getCant() {
         return cant;
     }
 
