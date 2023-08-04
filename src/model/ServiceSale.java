@@ -4,11 +4,11 @@ public class ServiceSale{
     
     private Sale sale;   
 
-    public ServiceSale(Product product, int cant) {
-        
+    public ServiceSale(Product product, int cant) {        
+        this.sale = new Sale(product, cant);
     }
 
-    public Sale getSale() {
+    public Sale getSale() {        
         return sale;
     }
 

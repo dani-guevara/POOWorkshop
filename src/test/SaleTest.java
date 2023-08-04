@@ -1,6 +1,5 @@
 package test;
 import static org.junit.Assert.assertEquals;
-
 import org.junit.jupiter.api.Test;
 import model.ETypeProduct;
 import model.Product;
