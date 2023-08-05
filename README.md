@@ -2,6 +2,11 @@
 
 The project was developed based on a class diagram, which allows to aggregate sales and visualize sales information.
 
+## Tools used
+
+- VSCode
+- Java 20
+
 ## Folder Structure
 
 The workspace contains two folders by default, where:
