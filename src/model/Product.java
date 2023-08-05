@@ -28,7 +28,7 @@ public class Product {
     public void setStock(int stock) throws Exception {
 
         int finalStock = 0;
-        finalStock = finalStock - stock;
+        finalStock = this.stock - stock;
 
         if (finalStock < STOCK_MIN) {
             throw new Exception("No units available");

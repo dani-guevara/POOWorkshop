@@ -27,7 +27,7 @@ public class ServiceSaleTest {
 
     }
     @Test
-    void testGetSale() {
+    void testGetSale() throws Exception {
         setup();
         serviceSale = new ServiceSale(whisky, 8);
         sale = serviceSale.getSale();
