@@ -13,7 +13,12 @@ public class Presenter {
     
     public double addSale(String name, double value, int stock, boolean iva, ETypeProduct eTypeProduct, int cant){
         
-        serviceSale = new ServiceSale(new Product(name, value, stock, iva, eTypeProduct), cant);
+        try {
+            serviceSale = new ServiceSale(new Product(name, value, stock, iva, eTypeProduct), cant);
+        } catch (Exception e) {
+            
+            e.printStackTrace();
+        }
         return serviceSale.getSale().getTotalSale();        
     }
 
@@ -21,7 +26,7 @@ public class Presenter {
 
         String showSale = "Total: " + serviceSale.getSale().getTotalSale()
             + "\nStored value: " + serviceSale.getSale().calcIva()
-            + "\nDiscount value: " + serviceSale.getSale().calcDiscount();
+            + "\nDiscount value " + serviceSale.getSale().calcDiscount();
 
         return showSale;
     }

@@ -25,8 +25,15 @@ public class Product {
         this.value = value;
     }
 
-    public void setStock(int stock) {
-        this.stock = stock;
+    public void setStock(int stock) throws Exception {
+
+        int finalStock = 0;
+        finalStock = finalStock - stock;
+
+        if (finalStock < STOCK_MIN) {
+            throw new Exception("No units available");
+        }
+        this.stock = finalStock;
     }
 
     public void setIva(boolean iva) {

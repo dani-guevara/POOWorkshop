@@ -44,12 +44,24 @@ public class Runner {
 
                         System.out.println("-- Enter product value --");
                         value = sc.nextDouble();
+                        while (value < 0) {
+                            System.out.println("Enter a correct value");
+                            value = sc.nextDouble();
+                        }
 
                         System.out.println("-- Enter product stock --");
                         stock = sc.nextInt();
+                        while (stock < 0) {
+                            System.out.println("Enter a correct stock");
+                            stock = sc.nextInt();
+                        }
 
                         System.out.println("-- If product have iva, input 1, on the other hand, input 2 --");
                         ivaNum = sc.nextInt();
+                        while (ivaNum != 1 & ivaNum != 2) {
+                            System.out.println("Enter a correct option");
+                            ivaNum = sc.nextInt();
+                        }
 
                         System.out.println("-- Enter product type --" 
                             + "\n1. Licores"
@@ -58,9 +70,17 @@ public class Runner {
                             + "\n4. Aseo" 
                             + "\n5. Rancho");
                         typeProduct = sc.nextInt();
+                        while (typeProduct != 1 & typeProduct != 2 & typeProduct != 3 & typeProduct != 4 & typeProduct != 5) {
+                            System.out.println("Enter a correct product type");
+                            typeProduct = sc.nextInt();
+                        }
 
                         System.out.println("-- Enter product cant --");
                         cant = sc.nextInt();
+                        while (cant < 0) {
+                            System.out.println("Enter a correct cant");
+                            cant = sc.nextInt();
+                        }
 
                         if (ivaNum == 1) {
                             iva = true;
